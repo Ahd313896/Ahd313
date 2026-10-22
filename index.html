@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملتقى عهد</title>
+    <style>
+        /* Google Fonts for beautiful Arabic typography */
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fcfbf6; /* Light cream background */
+            background-image: radial-gradient(#e5dfd3 1px, transparent 1px);
+            background-size: 20px 20px;
+            font-family: 'Tajawal', sans-serif;
+            color: #2b2b2b;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 450px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 15px;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px 0 25px 0;
+        }
+
+        .divider::before, .divider::after {
+            content: "";
+            height: 1px;
+            width: 80px;
+            background-color: #d1bfae;
+            margin: 0 10px;
+        }
+
+        .divider svg {
+            width: 16px;
+            height: 16px;
+            fill: #c3a87c;
+        }
+
+        .description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555555;
+            margin-bottom: 35px;
+            padding: 0 10px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            border: 1px solid #dcd1c4;
+            border-radius: 12px;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: #2b2b2b;
+            font-size: 18px;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        .link-card:hover, .link-card:active {
+            background-color: #f9f8f4;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-color: #c3a87c;
+        }
+
+        .icon-wrapper {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            border: 1px solid #dcd1c4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffffff;
+        }
+
+        .icon-wrapper svg {
+            width: 20px;
+            height: 20px;
+            fill: #1a1a1a;
+        }
+
+        .link-title {
+            flex-grow: 1;
+            text-align: center;
+            padding: 0 15px;
+        }
+
+        .arrow-icon svg {
+            width: 14px;
+            height: 14px;
+            fill: #c3a87c;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Logo Image (Ensure 141918.jpg is in the same folder) -->
+        <div class="logo-container">
+            <img src="141918.jpg" alt="ملتقى عهد" class="logo">
+        </div>
+
+        <!-- Title -->
+        <h1>ملتقى عهد</h1>
+
+        <!-- Decorative Divider -->
+        <div class="divider">
+            <svg viewBox="0 0 24 24"><path d="M12 2L14.4 9.6L22 12L14.4 14.4L12 22L9.6 14.4L2 12L9.6 9.6L12 2Z"/></svg>
+        </div>
+
+        <!-- Description -->
+        <p class="description">
+            ملتقى شبابي تطوعي لنشر معارف أهل البيت (عليهم السلام) وبناء وعي ديني وثقافي يصنع إنساناً رسالياً مؤثراً في مجتمعه.
+        </p>
+
+        <!-- Social Links -->
+        <div class="links-container">
+            
+            <!-- Telegram Link -->
+            <a href="https://t.me/ahd313iq" class="link-card" target="_blank">
+                <div class="icon-wrapper">
+                    <!-- Telegram SVG Icon -->
+                    <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a5.8 5.8 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.888-.667 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                </div>
+                <span class="link-title">قناتنا على تيليجرام</span>
+                <div class="arrow-icon">
+                    <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                </div>
+            </a>
+
+            <!-- Instagram Link -->
+            <a href="https://www.instagram.com/husseini.313.iq?vrfl=MXN6NWk1bzhveDRwMQ==" class="link-card" target="_blank">
+                <div class="icon-wrapper">
+                    <!-- Instagram SVG Icon -->
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </div>
+                <span class="link-title">حسابنا على إنستغرام</span>
+                <div class="arrow-icon">
+                    <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                </div>
+            </a>
+
+            <!-- TikTok Link -->
+            <a href="https://www.tiktok.com/@husseini.313.iq?_r=1&_t=ZS-9AZlUzefhzB" class="link-card" target="_blank">
+                <div class="icon-wrapper">
+                    <!-- TikTok SVG Icon -->
+                    <svg viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.04.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 2.26-1.17 4.45-2.9 5.75-1.68 1.25-3.86 1.71-5.91 1.34-2.12-.39-4-1.62-5.06-3.46-1.07-1.84-1.25-4.14-.5-6.11.75-1.95 2.45-3.49 4.44-4.12 1.94-.61 4.07-.5 5.92.29v4.13c-.9-.4-1.92-.52-2.87-.33-.94.19-1.78.74-2.31 1.53-.55.8-.75 1.83-.54 2.77.21.94.81 1.74 1.62 2.19.82.46 1.8.58 2.7.35.91-.23 1.67-.84 2.15-1.64.44-.75.64-1.64.6-2.52-.08-4.99-.04-9.98-.05-14.97h-1.31z"/></svg>
+                </div>
+                <span class="link-title">حسابنا على تيك توك</span>
+                <div class="arrow-icon">
+                    <svg viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+
+</body>
+</html>
